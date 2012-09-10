@@ -14,4 +14,4 @@ A Ruby implementation of some of the tips and tools found in the book [Flickr Ha
 # Motivation
 I've been a big fan of Bumgardner (a.k.a krazydad) and his work (viewable [here](http://www.flickr.com/photos/krazydad/collections/72157622192771853/)). After emailing him asking how I could create my own mosaics, he told me he used the  scripts that could be found in his book. The (mostly Perl) examples are downloadable from O'Reilly [here](http://examples.oreilly.com/9780596102456/).
 
-As I am getting my feet wet with Ruby, I decided to eot a copy of the book from an online used bookstore and port the hacks to a more modern language.
+As I am getting my feet wet with Ruby, I decided to buy a copy of the book from an online used bookstore and port the hacks to a more modern language.
