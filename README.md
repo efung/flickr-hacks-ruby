@@ -3,7 +3,7 @@
 A Ruby implementation of some of the tips and tools found in the book [Flickr Hacks](http://shop.oreilly.com/product/9780596102456.do) by Paul Bausch and Jim Bumgardner.
 
 ## Completed
-* [Hack 33 - Download a List of Photos](https://github.com/efung/flickr-hacks-ruby/tree/hack33)
+* [Hack 33 - Download a List of Photos](https://github.com/efung/flickr-hacks-ruby/tree/master/hack33)
 
 ## Planned
 * Hack 34 - Cache Photos Locally
