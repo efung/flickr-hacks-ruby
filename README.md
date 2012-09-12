@@ -4,9 +4,10 @@ A Ruby implementation of some of the tips and tools found in the book [Flickr Ha
 
 ## Completed
 * [Hack 33 - Download a List of Photos](https://github.com/efung/flickr-hacks-ruby/tree/master/hack33)
+* [Hack 34 - Cache Photos Locally](https://github.com/efung/flickr-hacks-ruby/tree/master/hack34)
 
 ## Planned
-* Hack 34 - Cache Photos Locally
+* Hack 43 - Mash Up Your Photos
 * Hack 44 - Find the Dominant Color of an Image
 * Hack 45 - Make a Color Picker
 * Hack 49 - Make a Photo Mosaic
