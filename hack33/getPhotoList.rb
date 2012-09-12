@@ -62,6 +62,7 @@ if ARGV.length == 0 then
   opt_summary = opt_parser.summarize
   puts opt_parser.banner
   puts opt_summary[2..-1]
+  exit
 end
 
 opt_parser.parse!
