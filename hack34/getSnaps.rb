@@ -8,6 +8,7 @@
 # Author:: Eric Fung <efung@acm.org>
 # Website:: https://github.com/efung/flickr-hacks-ruby
 
+require 'fileutils'
 require 'flickraw-cached'
 require 'open-uri'
 require 'optparse'
@@ -17,13 +18,17 @@ options = {}
 
 opt_parser = OptionParser.new do |opt|
   opt.banner= <<-eob
-getSnaps.pl [--big] <photolist_file> [dirname]
+getSnaps.pl [--big] [--partition] <photolist_file> [dirname]
   eob
   opt.summary_indent = ''
   opt.summary_width = 16
 
   opt.on('--big', 'Return medium-sized photos instead of thumbnails') do
     options[:big] = true
+  end
+
+  opt.on('--partition', 'Save photos in folders grouped by server number') do
+    options[:partition] = true
   end
 
   opt.on('--verbose', 'Dump verbose information') do
@@ -64,7 +69,13 @@ PHOTOS.each do |photo|
     self[args[0].to_s]
   end
   purlt = options[:big] ? FlickRaw::url(photo) : FlickRaw::url_t(photo)
-  fname = "#{dirname}/#{photo['id']}#{suffix}.jpg"
+  if !options[:partition]
+    fname = "#{dirname}/#{photo['id']}#{suffix}.jpg"
+  else
+    subdirname = "#{dirname}/server#{photo['server']}/#{photo['id'].to_i / 1000}"
+    FileUtils::mkdir_p subdirname
+    fname = "#{subdirname}/#{photo['id']}#{suffix}.jpg"
+  end
   puts "Checking #{fname}..." if options[:verbose]
 
   next if File.exists?(fname)

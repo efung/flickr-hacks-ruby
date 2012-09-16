@@ -11,6 +11,5 @@ Given a set of photo metadata, downloads local copies of the photos.
 ## Differences from book
 * Single-word command-line options (X Toolkit style) have been changed 
   to GNU style double-dash options.
-* Only the basic script is implemented, not the centralized storage
-	strategy extension.
-
+* The storage partitioning strategy described in "Hacking the Hack" can
+  be selected by passing `--partition`.
