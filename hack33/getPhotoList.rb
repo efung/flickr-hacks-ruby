@@ -137,7 +137,10 @@ params[:license] = options[:license] if !options[:license]
 params[:tag_mode] = 'all' if options[:all]
 
 ofile = File.new(ofname, 'w')
-ofile.puts 'PHOTOS = ['
+ofile.puts <<EOH
+# encoding: utf-8
+PHOTOS = [
+EOH
 
 photoIdx = 0
 loop do
