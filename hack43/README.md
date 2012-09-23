@@ -15,3 +15,10 @@ Generates a collage of Flickr images that are randomly positioned and rotated
 * Single-word command-line options (X Toolkit style) have been changed 
   to GNU style double-dash options.
 * Bug where collagename was not respected has been fixed.
+
+## Example Usage
+    $ ruby getPhotoList.rb --limit 300 gerbera  # Hack 33
+    $ ruby getSnaps.rb gerbera.rb gerbera # Hack 34
+    $ ruby makeCollage.rb gerbera.rb gerbera
+
+[![Gerbera Collage](http://efung.github.com/flickr-hacks-ruby/img/gerbera_t_thumbnail.png)](http://efung.github.com/flickr-hacks-ruby/img/gerbera_t.png)
