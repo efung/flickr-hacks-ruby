@@ -5,12 +5,14 @@ A Ruby implementation of some of the tips and tools found in the book [Flickr Ha
 ## Completed
 * [Hack 33 - Download a List of Photos](https://github.com/efung/flickr-hacks-ruby/tree/master/hack33)
 * [Hack 34 - Cache Photos Locally](https://github.com/efung/flickr-hacks-ruby/tree/master/hack34)
+* [Hack 43 - Mash Up Your Photos](https://github.com/efung/flickr-hacks-ruby/tree/master/hack43)
 
 ## Planned
-* Hack 43 - Mash Up Your Photos
 * Hack 44 - Find the Dominant Color of an Image
-* Hack 45 - Make a Color Picker
+* Image::Mosaic
+* Image::FlickrSet
 * Hack 49 - Make a Photo Mosaic
+
 
 # Motivation
 I've been a big fan of Bumgardner (a.k.a krazydad) and his work (viewable [here](http://www.flickr.com/photos/krazydad/collections/72157622192771853/)). After emailing him asking how I could create my own mosaics, he told me he used the  scripts that could be found in his book. The (mostly Perl) examples are downloadable from O'Reilly [here](http://examples.oreilly.com/9780596102456/).
