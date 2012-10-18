@@ -23,3 +23,7 @@ Generates a collage of Flickr images
     $ ruby makeCollage.rb gerbera.rb gerbera
 
 [![Gerbera Collage](http://efung.github.com/flickr-hacks-ruby/img/gerbera_t_thumbnail.png)](http://efung.github.com/flickr-hacks-ruby/img/gerbera_t.png)
+
+    $ ruby makeCollage.rb --layout sunflower gerbera.rb gerbera-sunflower
+
+[![Gerbera Sunflower Collage](http://efung.github.com/flickr-hacks-ruby/img/gerbera-sunflower_t_thumbnail.png)](http://efung.github.com/flickr-hacks-ruby/img/gerbera-sunflower_t.png)
