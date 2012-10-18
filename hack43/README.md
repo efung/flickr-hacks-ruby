@@ -1,7 +1,7 @@
 # Hack 43 - Mash Up Your Photos
 
 ## Description
-Generates a collage of Flickr images that are randomly positioned and rotated
+Generates a collage of Flickr images
 
 ## Requirements
 * Ruby 1.9
@@ -15,6 +15,7 @@ Generates a collage of Flickr images that are randomly positioned and rotated
 * Single-word command-line options (X Toolkit style) have been changed 
   to GNU style double-dash options.
 * Bug where collagename was not respected has been fixed.
+* *Added option to specify different layouts*
 
 ## Example Usage
     $ ruby getPhotoList.rb --limit 300 gerbera  # Hack 33
