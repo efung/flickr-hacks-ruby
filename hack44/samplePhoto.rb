@@ -8,6 +8,7 @@
 # Author:: Eric Fung <efung@acm.org>
 # Website:: https://github.com/efung/flickr-hacks-ruby
 
+require 'open-uri'
 require 'RMagick'
 include Magick
 
@@ -18,7 +19,7 @@ class SamplePhoto
 
   def parse_opts
     if @ARGV.length != 1 then
-      puts "samplePhoto.rb <photoname>"
+      puts "samplePhoto.rb <photoname_or_url>"
       exit
     end
   end
@@ -26,7 +27,15 @@ class SamplePhoto
   def run
     photoname = @ARGV.shift
 
-    img = Image.read(photoname).first
+    # If photoname doesn't exist locally, try it as a URL
+    if File.exist?(photoname) then
+      img = Image.read(photoname).first
+    else
+      open(photoname, 'rb') do |f|
+        img = Image.from_blob(f.read).first
+      end
+    end
+
     img.resize!(1, 1)
     pixel = img.pixel_color(0, 0)
     img.destroy!
