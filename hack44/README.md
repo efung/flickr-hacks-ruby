@@ -9,11 +9,13 @@ Generates a collage of Flickr images
 * rmagick gem: http://rmagick.rubyforge.org/
 
 ## Differences from book
-* In addition to specifying a local file, you can also specify a URL to
-  an image
+* In addition to specifying a local file, you can also specify a URL to an image
 
-## Example Usage
+## Example Usage: samplePhoto.rb
+    $ ruby samplePhoto.rb http://www.example.com/persimmon.png
     $ ruby samplePhoto.rb persimmon.jpg 
+
+Example output:
 ```html
 <html><body>
 <table><tr>
@@ -28,5 +30,5 @@ B: 96<br>
 </td></tr></table>
 </body></html>
 ```
+![samplePhoto persimmon output](http://efung.github.com/flickr-hacks-ruby/img/samplePhoto_persimmon.png)
 
-[![samplePhoto persimmon output](http://efung.github.com/flickr-hacks-ruby/img/samplePhoto_persimmon.png)]
