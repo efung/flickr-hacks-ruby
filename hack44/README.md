@@ -1,7 +1,7 @@
 # Hack 44 - Find the Dominant Color of an Image
 
 ## Description
-Generates a collage of Flickr images
+Finds the dominant color of an image, and outputs the image metadata and color information as a Ruby array.
 
 ## Requirements
 * Ruby 1.9
@@ -9,9 +9,9 @@ Generates a collage of Flickr images
 * rmagick gem: http://rmagick.rubyforge.org/
 
 ## Differences from book
-* In addition to specifying a local file, you can also specify a URL to an image
+* samplePhoto.rb: In addition to specifying a local file, you can also specify a URL to an image
 
-## Example Usage: samplePhoto.rb
+## Usage: samplePhoto.rb
     $ ruby samplePhoto.rb http://www.example.com/persimmon.png
     $ ruby samplePhoto.rb persimmon.jpg 
 
@@ -32,3 +32,10 @@ B: 96<br>
 ```
 ![samplePhoto persimmon output](http://efung.github.com/flickr-hacks-ruby/img/samplePhoto_persimmon.png)
 
+## Usage: sampleSnaps.rb
+The original Perl script produces a file containing an array named
+`@photos`. In Ruby, local variables cannot be read via `require` or  
+`load`, so this script produces a file with a constant array named
+`PHOTOS`.
+
+    $ ruby sampleSnaps.rb persimmon
